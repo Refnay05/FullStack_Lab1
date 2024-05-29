@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <nombre>Juegadores base de datos</nombre>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>base datos jugadores</h1>
+
+  <!-- Form to create a new player -->
+  <h2>Agregar nuevo jugador</h2>
+  <form id="addRecipeForm">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="intereses">Intereses:</label><br>
+    <textarea id="intereses" name="intereses" required></textarea><br>
+    <label for="ciudad">Ciudad:</label><br>
+    <textarea id="ciudad" name="ciudad" required></textarea><br>
+    <label for="edad">Edad :</label><br>
+    <input type="number" id="edad" name="edad" required><br><br>
+    <input type="hidden" id="recipeId" name="recipeId">
+    <button type="submit">Agregar jugador</button>
+  </form>
+
+  <!-- Table to display recipes -->
+  <h2>Todos jugadores</h2>
+  <table id="recipeTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Intereses</th>
+        <th>Ciudad</th>
+        <th>Edad</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="recipeList">
+      
+    </tbody>
+  </table>
+
+  <!-- Form to edit player -->
+<h2>Editar jugador</h2>
+<form id="editRecipeForm">
+    <input type="hidden" id="recipeId" name="recipeId">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="intereses">Intereses:</label><br>
+    <textarea id="intereses" name="intereses" required></textarea><br>
+    <label for="ciudad">Ciudad:</label><br>
+    <textarea id="ciudad" name="ciudad" required></textarea><br>
+    <label for="edad">Edad :</label><br>
+    <input type="number" id="edad" name="edad" required><br><br>
+    <button id="updateButton" type="submit">Guardar</button>
+</form>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
